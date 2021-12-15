@@ -10,8 +10,8 @@
     />
   </head>
   <body>
-    
-    <div class="container">
+
+    <div class="container-fluid">
       <div class="jumbotron text-center">
         <h1><b>Mission to Mars</b></h1>
         <p>
@@ -24,15 +24,16 @@
           >
         </p>
       </div>
-      {{(mars_websites) }}
+
       {% for mars_website in mars_websites %}
       <div class="row">
         <div class="col">
           <h2><b>Latest Mars News</b></h2>
-          <h5 class="heading">{{mars_website["Mars News"]}}</h5>
+          <h5 class="heading">{{mars_website.mars_news}}</h5>
           <p>{{mars_website.mars_paragraph}}</p>
         </div>
       </div>
+
       <div class="row">
         <div>
           <h2><b>Featured Mars Image</b></h2>
@@ -41,20 +42,25 @@
         <div class="row">
           <div class="col col-lg-2">
             <h2><b>Mars Facts</b></h2>
-            {{mars_website.mars_facts}}
+            {{mars_website.mars_facts | safe}}
           </div>
         </div>
-        <div class="card-deck">
-          <div class="col">
-            <h2><b> Mars Hemispheres</b></h2>
-            <img src="{{mars_website.hemispheres}}" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">{{mars_website.hemispheres}}</h5>
-              
+        
+        <div class="container-fluid">
+          <div class="card-deck">
+              <div class="col">
+              <h2 style="text-align: center;"><b>Mars Hemispheres</b></h2>
+             {% for hemisphere in mars_website.hemispheres %}
+             <div class="card" >
+              <img class="card-img-top" src="{{hemisphere.url}}" style = "display: inline;" />
+              <h2 class="card-title">{{hemisphere.title}}</h2>
             </div>
+            {% endfor %}
+           </div>
           </div>
         </div>
       </div>
+    </div>
       {% endfor %}
     </div>
   </body>
