@@ -17,7 +17,7 @@ Build a web application that scrapes various websites such as [Mars News Site](h
 - Using MongoDB with Flask, created a HTML page that displays all the scraped information.
 - Created a Python script with a function `scrape` that executes all scraping code and returns one Python dictionary containing all of the scraped data.
 - `/scrape` route made to import `scrape_mars.py`  script and calls the `scrape` function. The route queries Mongo database to paas the dictionary data and display the data in the appropriate HTML elements. 
-- 
+
 ## Results
 
 <img width="586" alt="final_app" src="https://user-images.githubusercontent.com/16246354/156901691-5d83af40-0b8d-42a9-8ec2-efc0fc6f186c.png">
