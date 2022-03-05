@@ -5,7 +5,7 @@ Build a web application that scrapes various websites such as [Mars News Site](h
 
 
 ## File Directory
-- `mission_to_mars.ipynb contains all scraping and analysis script
+- `mission_to_mars.ipynb` contains all scraping and analysis script
 - Images folder contains screenshots of Mars app
 - Template folder holds `index.html` which is our main web page displaying all the scraped data
 
