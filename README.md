@@ -1,7 +1,7 @@
 # Web Scraping Challenge - Mission to Mars
 
 ## The Challenge
-Build a web application that scrapes various websites such as [Mars News Site](https://redplanetscience.com/)for data related to the Mission to Mars and displays the information in a single HTML page using BeautifulSoup. 
+Build a web application that scrapes various websites such as [Mars News Site](https://redplanetscience.com/) for data related to the Mission to Mars and displays the information in a single HTML page using BeautifulSoup. 
 
 
 ## File Directory
